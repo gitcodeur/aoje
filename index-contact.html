@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>AOJE-Contact</title>
+    <link rel="stylesheet" href="style-contact.css">
+    <link rel="shortcut icon" href="media\favicon.ico">
+</head>
+<body>
+    <div class="titre">
+        <div class="nav">
+            <a href="index.html"><img src="media\headerlogo.png"></a>
+        </div>
+        <img src="media\strip.jpg" class="sep">
+        <h1>Contacter l'Aoje</h1>
+    </div>
+    <div class="anim">
+        <div class="map">
+            <iframe class="vmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2613.384184168326!2d2.107359611201352!3d49.079339285013965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6f58b969367e5%3A0x8dc7cb08d9b178ed!2s9%20Chem.%20d&#39;une%20Ruelle%20%C3%80%20l&#39;Autre%2C%2095300%20Ennery!5e0!3m2!1sfr!2sfr!4v1713374325766!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="info_sup">
+            <div class="adress">
+                <a href="https://www.google.fr/maps/place/9+Chem.+d'une+Ruelle+%C3%80+l'Autre,+95300+Ennery/@49.0793393,2.1073596,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6f58b969367e5:0x8dc7cb08d9b178ed!8m2!3d49.0793358!4d2.1099399!16s%2Fg%2F11ffvrlcrs?entry=ttu"><img class="logoad" src="media\logo-adresse.png"></a>
+                <p>9 Chemin d'une Ruelle À l'Autre,95300 Ennery</p>
+            </div>
+            <div class="tel">
+                <a href="tel:+33 1 30 38 11 84"><img class="logoads" src="media\logo-tel.png"></a>
+                <a href="tel:+33 1 30 38 11 84"><p class="p"> 01.30.38.11.84</p></a>
+            </div>
+        </div>
+    </div>
+    <input type="text" name="in" id="in">
+    <button type="submit" onclick="envoie()">Envoie !</button>
+    <style>
+    .titre{
+        text-align:center;
+    }
+    .titre h1{
+          font-size: 40px;
+          animation-name: titre;
+          animation-duration: 1.5s;
+    }
+    .sep{
+        animation-name: sep;
+        animation-duration: 1.5s;
+        width:100%;
+    }
+    .logoad{
+        width:35px;
+    }
+    .logoads{
+        width:27px;
+    }
+    .p{
+        text-decoration: none;
+        color:black;
+        margin-left:2px;
+    }
+    .adress,
+    .tel{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .map{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    .vmap{
+        height:300px;
+        width:90%;
+        border-radius:15px;
+    }
+    .nav{
+        display:flex;
+        justify-content:center;
+    }
+    .nav img{
+        width:70%;
+        animation-name:logo;
+        animation-duration: 3s;
+    }
+    .anim{
+        animation-name:body;
+        animation-duration: 2s;
+    }
+    @keyframes body{
+        from{
+            margin-top: 2000px;
+        }
+        to{
+            margin-top:0px;
+        }
+    }
+    @keyframes logo{
+        from{
+            opacity:0;
+        }
+        to{
+            opacity:5;
+        }
+    }
+    @keyframes sep{
+        from{
+            margin-left: -2000px;
+        }
+        to{
+            margin-left:0px;
+        }
+    }
+    @keyframes titre{
+        from{
+            margin-right:-5000px;
+        }
+        to{
+            margin-right: 0px;
+        }
+    }
+    </style>
+</body>
+</html>
